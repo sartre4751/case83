@@ -1,0 +1,2134 @@
+<!DOCTYPE html>
+<html>
+<style>
+  @font-face {
+    font-family: 'NotoSerifKR';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NotoSerifKR.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+  background-color: black;
+  margin-right: 20;
+}
+
+h1{
+  position: fixed;
+  left:50px;
+  font-size: 30pt;
+  font-family: NotoSerifKR;
+  color:white;
+  z-index: 1;
+}
+
+.index{
+  position: fixed;
+  top: 80px;
+  left:50px;
+  font-size: 15pt;
+  font-family: NotoSerifKR;
+  color:white;
+}
+
+
+.return{
+  position: fixed;
+  top: 25px;
+  right:50px;
+  font-size: 15pt;
+  font-family: NotoSerifKR;
+  color:white;
+  cursor: pointer;
+}
+
+
+
+
+.switch{
+  position: fixed;
+  top: 60px;
+  right:50px;
+  font-size: 15pt;
+  font-family: NotoSerifKR;
+  color:white;
+  cursor: pointer;
+}
+
+p{
+  font-size: 15pt;
+  font-family: NotoSerifKR;
+  color: white
+}
+
+
+a { 
+  text-decoration:none;
+}
+
+a:link {
+  color : black;
+}
+
+a:visited {
+  color : black;
+}
+a:hover {
+  color : white;
+}
+/*a:active {
+  color : green;
+}
+*/
+
+.re:link {
+  color : white;
+}
+
+.re:visited {
+  color : white;
+}
+
+
+#mydiv1-1 {
+  position: absolute;
+  top:280px;
+  left:150px;
+  z-index: 100;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+
+}
+
+
+#mydiv1-2 {
+  position: absolute;
+  top:340px;
+  left:180px;
+  z-index: 99;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv1-3 {
+  position: absolute;
+  top:420px;
+  left:200px;
+  z-index: 98;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv1-4 {
+  position: absolute;
+  top:480px;
+  left:100px;
+  z-index: 97;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv1-5 {
+  position: absolute;
+  top:540px;
+  left:230px;
+  z-index: 96;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv1-6 {
+  position: absolute;
+  top:600px;
+  left:100px;
+  z-index: 95;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv1-7 {
+  position: absolute;
+  top:660px;
+  left:250px;
+  z-index: 94;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv1-8 {
+  position: absolute;
+  top:720px;
+  left:100px;
+  z-index: 93;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv1-9 {
+  position: absolute;
+  top:780px;
+  left:70px;
+  z-index: 92;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv1-10 {
+  position: absolute;
+  top:380px;
+  left:100px;
+  z-index: 99;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+/*----------------중앙------------*/
+
+#mydiv2-1 {
+  position: absolute;
+  top:280px;
+  left:1100px;
+  z-index: 91;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+
+}
+
+
+#mydiv2-2 {
+  position: absolute;
+  top:340px;
+  left:1100px;
+  z-index: 90;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv2-2:hover{
+  z-index: 100;
+}
+
+
+#mydiv2-3 {
+  position: absolute;
+  top:440px;
+  left:1150px;
+  z-index: 89;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv2-4 {
+  position: absolute;
+  top:480px;
+  left:1150px;
+  z-index: 88;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv2-5 {
+  position: absolute;
+  top:540px;
+  left:1050px;
+  z-index: 87;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv2-6 {
+  position: absolute;
+  top:600px;
+  left:1000px;
+  z-index: 86;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv2-7 {
+  position: absolute;
+  top:660px;
+  left:1050px;
+  z-index: 85;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv2-8 {
+  position: absolute;
+  top:720px;
+  left:1050px;
+  z-index: 84;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv2-9 {
+  position: absolute;
+  top:780px;
+  left:1250px;
+  z-index: 83;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv2-10 {
+  position: absolute;
+  top:380px;
+  left:1200px;
+  z-index: 90;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+
+#mydiv2-11 {
+  position: absolute;
+  top:550px;
+  left:1400px;
+  z-index: 100;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+
+}
+
+
+#mydiv2-12 {
+  position: absolute;
+  top:630px;
+  left:1570px;
+  z-index: 100;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv2-13 {
+  position: absolute;
+  top:750px;
+  left:1400px;
+  z-index: 79;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+/*---------------동아-------------*/
+#mydiv3-1 {
+  position: absolute;
+  top:280px;
+  left:2300px;
+  z-index: 91;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+
+}
+
+
+#mydiv3-2 {
+  position: absolute;
+  top:340px;
+  left:2350px;
+  z-index: 100;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+
+
+#mydiv3-3 {
+  position: absolute;
+  top:410px;
+  left:2300px;
+  z-index: 89;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv3-4 {
+  position: absolute;
+  top:480px;
+  left:2200px;
+  z-index: 88;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv3-5 {
+  position: absolute;
+  top:540px;
+  left:2300px;
+  z-index: 87;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv3-6 {
+  position: absolute;
+  top:600px;
+  left:2350px;
+  z-index: 86;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv3-7 {
+  position: absolute;
+  top:660px;
+  left:2300px;
+  z-index: 85;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv3-8 {
+  position: absolute;
+  top:720px;
+  left:2300px;
+  z-index: 84;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv3-9 {
+  position: absolute;
+  top:780px;
+  left:2400px;
+  z-index: 83;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv3-10 {
+  position: absolute;
+  top:380px;
+  left:2150px;
+  z-index: 90;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+/*--------4 한겨레--------*/
+
+#mydiv4-1 {
+  position: absolute;
+  top:280px;
+  left:3300px;
+  z-index: 91;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+
+}
+
+
+#mydiv4-2 {
+  position: absolute;
+  top:350px;
+  left:3400px;
+  z-index: 100;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+
+
+#mydiv4-3 {
+  position: absolute;
+  top:400px;
+  left:3300px;
+  z-index: 89;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv4-4 {
+  position: absolute;
+  top:460px;
+  left:3400px;
+  z-index: 88;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv4-5 {
+  position: absolute;
+  top:540px;
+  left:3300px;
+  z-index: 87;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv4-6 {
+  position: absolute;
+  top:600px;
+  left:3400px;
+  z-index: 86;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv4-7 {
+  position: absolute;
+  top:660px;
+  left:3350px;
+  z-index: 85;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv4-8 {
+  position: absolute;
+  top:720px;
+  left:3350px;
+  z-index: 84;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv4-9 {
+  position: absolute;
+  top:780px;
+  left:3300px;
+  z-index: 83;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv4-10 {
+  position: absolute;
+  top:380px;
+  left:3500px;
+  z-index: 90;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+
+#mydiv4-11 {
+  position: absolute;
+  top:550px;
+  left:3400px;
+  z-index: 100;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+
+}
+
+/*----------경향-------*/
+
+
+#mydiv5-1 {
+  position: absolute;
+  top:280px;
+  left:4400px;
+  z-index: 91;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+
+}
+
+
+#mydiv5-2 {
+  position: absolute;
+  top:350px;
+  left:4150px;
+  z-index: 100;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+
+
+#mydiv5-3 {
+  position: absolute;
+  top:400px;
+  left:4200px;
+  z-index: 89;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv5-4 {
+  position: absolute;
+  top:460px;
+  left:4200px;
+  z-index: 88;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv5-5 {
+  position: absolute;
+  top:540px;
+  left:4300px;
+  z-index: 87;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv5-6 {
+  position: absolute;
+  top:600px;
+  left:4350px;
+  z-index: 86;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv5-7 {
+  position: absolute;
+  top:660px;
+  left:4300px;
+  z-index: 85;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+
+#mydiv5-8 {
+  position: absolute;
+  top:720px;
+  left:4350px;
+  z-index: 84;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv5-9 {
+  position: absolute;
+  top:780px;
+  left:4300px;
+  z-index: 83;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv5-10 {
+  position: absolute;
+  top:380px;
+  left:4500px;
+  z-index: 90;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+
+#mydiv5-11 {
+  position: absolute;
+  top:550px;
+  left:4400px;
+  z-index: 100;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+
+}
+
+#mydiv5-12 {
+  position: absolute;
+  top:720px;
+  left:4350px;
+  z-index: 84;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+
+/*---------------한국----------*/
+
+#mydiv6-1 {
+  position: absolute;
+  top:280px;
+  left:5300px;
+  z-index: 91;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+
+}
+
+
+#mydiv6-2 {
+  position: absolute;
+  top:350px;
+  left:5350px;
+  z-index: 100;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+
+
+#mydiv6-3 {
+  position: absolute;
+  top:400px;
+  left:5300px;
+  z-index: 89;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv6-4 {
+  position: absolute;
+  top:460px;
+  left:5200px;
+  z-index: 88;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv6-5 {
+  position: absolute;
+  top:540px;
+  left:5300px;
+  z-index: 87;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv6-6 {
+  position: absolute;
+  top:600px;
+  left:5350px;
+  z-index: 86;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv6-7 {
+  position: absolute;
+  top:660px;
+  left:5300px;
+  z-index: 85;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv6-8 {
+  position: absolute;
+  top:720px;
+  left:5400px;
+  z-index: 84;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv6-9 {
+  position: absolute;
+  top:780px;
+  left:5300px;
+  z-index: 83;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+
+/*---------서울---------*/
+
+#mydiv7-1 {
+  position: absolute;
+  top:280px;
+  left:6300px;
+  z-index: 91;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+
+}
+
+
+#mydiv7-2 {
+  position: absolute;
+  top:350px;
+  left:6350px;
+  z-index: 100;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv7-3 {
+  position: absolute;
+  top:400px;
+  left:6300px;
+  z-index: 89;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv7-4 {
+  position: absolute;
+  top:460px;
+  left:6250px;
+  z-index: 88;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv7-5 {
+  position: absolute;
+  top:540px;
+  left:6300px;
+  z-index: 87;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv7-6 {
+  position: absolute;
+  top:600px;
+  left:6350px;
+  z-index: 86;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv7-7 {
+  position: absolute;
+  top:660px;
+  left:6300px;
+  z-index: 85;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv7-8 {
+  position: absolute;
+  top:720px;
+  left:6400px;
+  z-index: 84;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv7-9 {
+  position: absolute;
+  top:780px;
+  left:6300px;
+  z-index: 83;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv7-10 {
+  position: absolute;
+  top:380px;
+  left:6500px;
+  z-index: 90;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+/*--------8 kbs-------*/
+
+#mydiv8-1 {
+  position: absolute;
+  top:280px;
+  left:7300px;
+  z-index: 91;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+
+}
+
+
+#mydiv8-2 {
+  position: absolute;
+  top:350px;
+  left:7350px;
+  z-index: 100;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+
+
+#mydiv8-3 {
+  position: absolute;
+  top:400px;
+  left:7300px;
+  z-index: 89;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv8-4 {
+  position: absolute;
+  top:460px;
+  left:7200px;
+  z-index: 88;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv8-5 {
+  position: absolute;
+  top:540px;
+  left:7300px;
+  z-index: 87;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv8-6 {
+  position: absolute;
+  top:600px;
+  left:7350px;
+  z-index: 86;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv8-7 {
+  position: absolute;
+  top:660px;
+  left:7300px;
+  z-index: 85;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv8-8 {
+  position: absolute;
+  top:720px;
+  left:7400px;
+  z-index: 84;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv8-9 {
+  position: absolute;
+  top:780px;
+  left:7300px;
+  z-index: 83;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv8-10 {
+  position: absolute;
+  top:380px;
+  left:7500px;
+  z-index: 90;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+/*---------9 mbc----------*/
+
+#mydiv9-1 {
+  position: absolute;
+  top:280px;
+  left:8300px;
+  z-index: 91;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+
+}
+
+
+#mydiv9-2 {
+  position: absolute;
+  top:350px;
+  left:8350px;
+  z-index: 100;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+
+
+#mydiv9-3 {
+  position: absolute;
+  top:400px;
+  left:8300px;
+  z-index: 89;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv9-4 {
+  position: absolute;
+  top:460px;
+  left:8200px;
+  z-index: 88;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv9-5 {
+  position: absolute;
+  top:540px;
+  left:8300px;
+  z-index: 87;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv9-6 {
+  position: absolute;
+  top:600px;
+  left:8350px;
+  z-index: 86;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv9-7 {
+  position: absolute;
+  top:660px;
+  left:8300px;
+  z-index: 85;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+/*------------10 sbs------------*/
+
+#mydiv10-1 {
+  position: absolute;
+  top:280px;
+  left:9300px;
+  z-index: 91;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+
+}
+
+
+#mydiv10-2 {
+  position: absolute;
+  top:350px;
+  left:9150px;
+  z-index: 100;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+
+
+#mydiv10-3 {
+  position: absolute;
+  top:400px;
+  left:9300px;
+  z-index: 89;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv10-4 {
+  position: absolute;
+  top:460px;
+  left:9200px;
+  z-index: 88;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv10-5 {
+  position: absolute;
+  top:540px;
+  left:9300px;
+  z-index: 87;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv10-6 {
+  position: absolute;
+  top:600px;
+  left:9150px;
+  z-index: 86;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv10-7 {
+  position: absolute;
+  top:660px;
+  left:9300px;
+  z-index: 85;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+/*-------------*/
+
+#fakediv {
+  position: absolute;
+  top:460px;
+  left:9950px;
+  z-index: 88;
+  background-color: transparent;
+  text-align: center;  
+  border: transparent;
+  color: transparent;
+}
+
+#mydivheader {
+  padding-top: 13px;
+  padding-bottom: 13px;
+  padding-left:25px;
+  padding-right:25px;
+  cursor: pointer;
+  z-index: 10;
+  background-color: #ffffff;
+  border: 1.5px solid black;
+  border-radius: 17px;
+  font-size: 16pt;
+  color: black;
+  box-shadow: 0 3px 10px 0 rgba(0,0,0,0.8), 0 3px 15px 0 rgba(0,0,0,0.2);
+}
+
+#mydivheader:hover{
+  background-color: grey;
+  z-index: 120;
+}
+
+#masterdiv {
+  white-space:nowrap; 
+    overflow-x: auto; }
+
+ .chosun{
+  position: absolute;
+  font-size: 17pt;
+  top:180px;
+  left:350px
+}
+
+.jungang{
+  position: absolute;
+  font-size: 17pt;
+  top:180px;
+  left:1350px
+}
+
+.donga{
+  position: absolute;
+  font-size: 17pt;
+  top:180px;
+  left:2550px
+}
+
+.hani{
+  position: absolute;
+  font-size: 17pt;
+  top:180px;
+  left:3550px 
+}
+
+.khan{
+  position: absolute;
+  font-size: 17pt;
+  top:180px;
+  left:4500px 
+}
+
+.hankook{
+  position: absolute;
+  font-size: 17pt;
+  top:180px;
+  left:5500px 
+}
+
+.seoul{
+  position: absolute;
+  font-size: 17pt;
+  top:180px;
+  left:6550px 
+}
+
+.kbs{
+  position: absolute;
+  font-size: 17pt;
+  top:180px;
+  left:7550px 
+}
+
+.mbc{
+  position: absolute;
+  font-size: 17pt;
+  top:180px;
+  left:8550px 
+}
+
+.sbs{
+  position: absolute; 
+  font-size: 17pt;
+  top:180px;
+  left:9550px 
+}
+
+#bg {
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+    
+  /* Preserve aspet ratio */
+  min-width: 100%;
+  min-height: 100%;
+  opacity: 40%;
+  z-index: 0;
+}
+
+
+#press {
+  white-space:nowrap; 
+    overflow-x: auto; }
+</style>
+<body>
+
+<h1>사건 83</h1>
+<img src="images/83.jpg" id="bg" alt="">
+<!-- <p class="index">헤드라인을 움직여 보세요 어쩌구</p> -->
+<!-- <p class="index">원하는/눈에띄는/재미있는 헤드라인을 찾아보세요!
+다 봤으면 버튼을 눌러 언론사별로도 보세요/ 오른쪽 상단 버튼을 눌러 언론사별로 볼 수 있습니다. or 정리된 모습을 보고 싶다면..</p> -->
+<div id= press>
+<p class="chosun">조선일보</p>
+<p class="jungang">중앙일보</p>
+<p class="donga">동아일보</p>
+<p class="hani">한겨레</p>
+<p class="khan">경향신문</p>
+<p class="hankook">한국일보</p>
+<p class="seoul">서울신문</p>
+<p class="kbs">KBS</p>
+<p class="mbc">MBC</p>
+<p class="sbs">SBS</p>
+
+</div>
+<p class="return"><a href ="https://sartre4751.github.io/case_100_main/case100_main.html" class="re">돌아가기</a></p>
+<!-- <p class="switch">바꾸기</p> -->
+
+<div id="fakediv"> 
+  ...
+</div>
+
+<!-------------조선------------- -->
+<div id="masterdiv">
+<div id="mydiv1-1">
+  <div id="mydivheader"><a href="https://www.chosun.com/opinion/contribution/2020/10/26/3URKP75LSVBMVJSMCUC2WSMFS4/" target="_blank">[기고] 이건희 회장의 진짜 克日 </a> </div>
+</div>
+
+<div id="mydiv1-2">
+  <div id="mydivheader"><a href="https://biz.chosun.com/site/data/html_dir/2020/10/25/2020102500496.html" target="_blank">[이건희 별세] 이건희가 키운 고졸 여직원, 여당 최고위원으로… 인재 키운 삼성 실험들
+</a></div>
+</div>
+
+<div id="mydiv1-3">
+  <div id="mydivheader"><a href="http://it.chosun.com/site/data/html_dir/2020/10/25/2020102500253.html" target="_blank">[이건희 별세] ④5단계로 살펴본 이건희 회장 일생 연대기</a></div></div>
+
+  
+<div id="mydiv1-4">
+  <div id="mydivheader"><a href="https://www.chosun.com/economy/industry-company/2020/10/25/6QYM4TWMKFG73C76HW26Z3PC2E/" target="_blank">이건희 삼성 회장 별세... “가족장으로 치를 것” </a> </div>
+</div>
+
+
+<div id="mydiv1-5">
+  <div id="mydivheader"><a href="https://www.chosun.com/politics/blue_house/2020/10/25/HJ7VYWFVXFB6HO6CXBQEU3DCLY/" target="_blank">
+  문 대통령 “이건희 리더십, 기업에 큰 귀감과 용기”   </a></div>
+</div>
+
+
+<div id="mydiv1-6">
+  <div id="mydivheader"><a href="https://www.chosun.com/economy/industry-company/2020/10/25/5TKJZWKWHRBJVPJI7P2DIOMC5M/" target="_blank">체육인 이건희, IOC위원으로 평창올림픽 유치후 눈물 쏟아   </a></div></div>
+
+<div id="mydiv1-7">
+  <div id="mydivheader"><a href="https://www.chosun.com/culture-life/culture_general/2020/10/25/KSXXKTGFIVCPZLOD3DX467SEOM/" target="_blank">이건희와 원불교의 특별한 인연, 120억 시주해 미국 포교센터도  </a> </div>
+</div>
+
+<div id="mydiv1-8">
+  <div id="mydivheader"><a href="https://www.chosun.com/economy/industry-company/2020/10/25/HEXJ35KC6NB5JPERBP3ORUROHQ/" target="_blank">박영선 장관 “삼성은 이건희 ‘반도체 사랑’이 만든 결과"   </a></div>
+</div>
+
+<div id="mydiv1-9">
+  <div id="mydivheader"><a href="https://www.chosun.com/politics/assembly/2020/10/26/6EBPDCVWLBAKFKF3JAPZ53EKQY/" target="_blank">애도한다며…이낙연, 마지막까지 이건희 단점 지적"  </a></div>
+</div>
+
+<div id="mydiv1-10">
+  <div id="mydivheader"><a href="https://www.chosun.com/economy/industry-company/2020/10/25/MG4W3FW6IVHCXFEM3LSAAVJLXY/" target="_blank"> 카랑카랑했다, 이건희 육성 들어봤습니까  </a></div>
+</div>
+
+
+<!-- ----------------중앙------------ -->
+
+<div id="mydiv2-1">
+  <div id="mydivheader"><a href="https://news.joins.com/article/23902941" target="_blank">[이건희 별세]이재용, 팰리세이드 직접 몰고 아들·딸과 빈소에  </a></div>
+</div>
+
+<div id="mydiv2-2">
+  <div id="mydivheader"><a href="https://news.joins.com/article/23905699" target="_blank">이건희 빈소 사진 공개 후폭풍…이용섭 시장 "비공개 몰랐다"  </a></div>
+</div>
+
+<div id="mydiv2-3">
+  <div id="mydivheader"><a href="https://news.joins.com/article/23904705" target="_blank">이건희 회장 빈소 찾은 구광모 "위대한 기업인, 참 안타깝다" </a></div></div>
+
+<div id="mydiv2-4">
+  <div id="mydivheader"><a href="https://news.joins.com/article/23902731" target="_blank">[이건희 별세] 18개월간 해외출장 170일, 끝내 평창 유치 따내  </a></div>
+</div>
+
+<div id="mydiv2-5">
+  <div id="mydivheader"><a href="https://news.joins.com/article/23902981" target="_blank">문 대통령 "이건희 회장은 韓경제 성장의 견인차…깊이 애도"   </a></div>
+</div>
+
+<div id="mydiv2-6">
+  <div id="mydivheader"><a href="https://news.joins.com/article/23903308" target="_blank">[이건희 별세]원불교 최고 어른이 기억하는 이건희 회장  </a></div>
+</div>
+
+<div id="mydiv2-7">
+  <div id="mydivheader"><a href="https://news.joins.com/article/23906865" target="_blank">[단독] 애플 팀 쿡 CEO, 고 이건희 회장 빈소에 조화 보냈다
+   </a></div>
+</div>
+
+<div id="mydiv2-8">
+  <div id="mydivheader"><a href="https://news.joins.com/article/23902742" target="_blank">[이건희 별세] 국민의힘 "국민 자부심 높였던 선각자" </a></div>
+</div> 
+
+<div id="mydiv2-9">
+  <div id="mydivheader"><a href="https://news.joins.com/article/23902765" target="_blank">[이건희 별세]박영선 "기자 시절 알려준 영화 '천칭'   </a> </div>
+</div>
+
+<!-- ----------------동아------------ -->
+
+<div id="mydiv3-1">
+  <div id="mydivheader"><a href="https://www.donga.com/news/Economy/article/all/20201025/103612935/1" target="_blank">이건희 누구인가…승부사 기질로 글로벌 삼성 이끈 장본인
+ </a> </div>
+</div>
+
+
+<div id="mydiv3-2">
+  <div id="mydivheader"><a href="https://www.donga.com/news/Economy/article/all/20201028/103666808/2" target="_blank">故 이건희 회장 영결식 엄수…비공개로 진행</a></div>
+</div>
+
+
+<div id="mydiv3-3">
+  <div id="mydivheader"><a href="https://www.donga.com/news/Sports/article/all/20201026/103628736/1" target="_blank">IOC, 故이건희 회장 애도 조기 게양… “올림픽에 많은 기여, 유산 이어질 것”</a></div>
+</div>
+
+<div id="mydiv3-4">
+  <div id="mydivheader"><a href="https://www.donga.com/news/Society/article/all/20201027/103646817/2" target="_blank">“돈이 무슨 소용” 이건희 회장 마지막 편지?…삼성 “가짜”</a></div>
+</div>
+
+<div id="mydiv3-5">
+  <div id="mydivheader"><a href="https://www.donga.com/news/Economy/article/all/20201026/103626117/1" target="_blank">원불교, 이건희 회장 분향소 흑석동 서울교구청에 마련…토요일마다 천도</a> </div>
+</div>
+
+
+<div id="mydiv3-6">
+  <div id="mydivheader"><a href="https://www.donga.com/news/Politics/article/all/20201025/103617736/1" target="_blank">靑, 故이건희 빈소 ‘삼성저격수’ 김상조 대신 노영민 보내
+ </a> </div>
+</div>
+
+<div id="mydiv3-7">
+  <div id="mydivheader"><a href="https://www.donga.com/news/Economy/article/all/20201025/103619972/1" target="_blank">스마트폰 세계 1위 ‘갤럭시’…이건희 불호령 ‘애니콜 화형식’ 있었다</a></div>
+</div>
+
+<div id="mydiv3-8">
+  <div id="mydivheader"><a href="https://www.donga.com/news/Politics/article/all/20201025/103616179/1" target="_blank">안철수 “이건희 정신, 4차 산업혁명 위한 귀감 삼아야”</a> </div>
+</div>
+
+<div id="mydiv3-9">
+  <div id="mydivheader"><a href="https://www.donga.com/news/Economy/article/all/20201025/103621115/1" target="_blank">“한 명의 천재가 10만 명 먹여 살린다”…초일류 삼성 키운 인재 경영</a> </div>
+</div>
+
+<!-- ----------------4 한겨레------------ -->
+
+
+<div id="mydiv4-1">
+  <div id="mydivheader"><a href="https://www.hani.co.kr/arti/opinion/editorial/967153.html?_fr=mt0" target="_blank">[사설] 영욕의 삶 마친 이건희 회장, 삼성에 남겨진 과제          
+</a></div>
+</div>
+
+<div id="mydiv4-2">
+  <div id="mydivheader"><a href="https://www.hani.co.kr/arti/economy/economy_general/967639.html" target="_blank">이재용, 이제는 '1인자의 시간' 다</a></div>
+</div>
+
+<div id="mydiv4-3">
+  <div id="mydivheader"><a href="https://www.hani.co.kr/arti/economy/economy_general/967545.html" target="_blank"> 이건희 삼성 회장, 영결식 엄수…수원 선산에 잠들다“</a> </div>
+</div>
+
+
+<div id="mydiv4-4">
+  <div id="mydivheader"><a href="https://www.hani.co.kr/arti/society/religious/967200.html" target="_blank">이건희 회장과 원불교 각별한 인연…교단장 봉행</a></div>
+</div>
+
+
+<div id="mydiv4-5">
+  <div id="mydivheader"><a href="https://www.hani.co.kr/arti/politics/assembly/967097.html" target="_blank">이건희 별세에, 보수 야권 “국민 자부심 높인 선각자” 애도
+</a></div>
+</div>
+
+<div id="mydiv4-6">
+  <div id="mydivheader"><a href="https://www.hani.co.kr/arti/economy/economy_general/967512.html" target="_blank">'재계의 거인' 삼성 이건희 회장 영면…오늘 영결식“
+</a></div>
+</div>
+
+<div id="mydiv4-7">
+  <div id="mydivheader"><a href="https://www.hani.co.kr/arti/area/capital/967117.html" target="_blank">이재명 경기지사 “이건희 회장 남긴 족적 돌아보고 기억할 것”
+</a></div>
+</div>
+
+<div id="mydiv4-8">
+  <div id="mydivheader"><a href="https://www.hani.co.kr/arti/politics/assembly/967703.html" target="_blank">국민 84% “이건희 회장 공로 크다”…과오에 대해선 여론 엇갈려 </a></div>
+</div>
+
+
+<div id="mydiv4-9">
+  <div id="mydivheader"><a href="https://m.hani.co.kr/arti/area/yeongnam/967271.html" target="_blank">이건희 회장 태어난 대구 성내3동에서 작은 추모식
+</a> </div>
+</div>
+
+
+
+<!-- ----------------5 경향------------ -->
+
+
+<div id="mydiv5-1">
+  <div id="mydivheader"><a href="http://news.khan.co.kr/kh_news/khan_art_view.html?art_id=202010251000001" target="_blank">이건희 삼성 회장 떠나다 </a> </div>
+</div>
+
+<div id="mydiv5-2">
+  <div id="mydivheader"><a href="http://news.khan.co.kr/kh_news/khan_art_view.html?art_id=202010251716001" target="_blank">포스트 이건희, 삼성 지배구조 개편은?</a></div>
+</div> 
+
+<div id="mydiv5-3">
+  <div id="mydivheader"><a href="http://news.khan.co.kr/kh_news/khan_art_view.html?art_id=202010251530001" target="_blank">문 대통령, 이건희 회장 빈소에 조화 보내기로</a></div>
+</div>
+
+<div id="mydiv5-4">
+  <div id="mydivheader"><a href="http://news.khan.co.kr/kh_news/khan_art_view.html?art_id=202010251748001" target="_blank">원불교, 이건희 회장 장례 교단장으로 치러…천도재와 추도식도 거행</a></div>
+</div>
+
+<div id="mydiv5-5">
+  <div id="mydivheader"><a href="http://news.khan.co.kr/kh_news/khan_art_view.html?art_id=202010252142015" target="_blank">신문레슬링 선수 출신으로 ‘스포츠 외교’…프로야구 삼성 창단, 아낌없는 투자</a> </div>
+</div>
+
+<div id="mydiv5-6">
+  <div id="mydivheader"><a href="http://news.khan.co.kr/kh_news/khan_art_view.html?art_id=202010251527001 " target="_blank">경향신문반올림 “삼성의 어두운 역사, 이건희 회장 죽음과 함께 끝나야”
+</a> </div></div>
+
+<div id="mydiv5-7">
+  <div id="mydivheader"><a href="http://news.khan.co.kr/kh_news/khan_art_view.html?art_id=202010251527011" target="_blank">경실련 “이건희, 경제 발전 기여했지만 그늘도…”</a></div></div>
+
+<div id="mydiv5-8">
+  <div id="mydivheader"><a href="http://news.khan.co.kr/kh_news/khan_art_view.html?art_id=202010261558001" target="_blank">이건희 유언장엔 어떤 내용 담겼을까 </a> </div>
+</div>
+
+<!-- <div id="mydiv5-9">
+  <div id="mydivheader"><a href="http://news.khan.co.kr/kh_news/khan_art_view.html?art_id=202006182102005 " target="_blank">
+‘군사 행동’ 예고한 북한 ‘김여정 비판’엔 무반응</a> </div>
+</div>
+ -->
+<!-- ----------------6 한국------------ -->
+
+
+
+<div id="mydiv6-1">
+  <div id="mydivheader"><a href="https://www.hankookilbo.com/News/Read/A2020102809410000639"target="_blank">故 이건희 회장, 유언장 남겼나… 없다면 상속 절차는?
+  </a> </div>
+</div>
+
+
+<div id="mydiv6-2">
+  <div id="mydivheader"><a href="https://www.hankookilbo.com/News/Read/A2020102509530002149" target="_blank">[속보] 이건희 삼성전자 회장 별세
+  </a></div>
+</div>
+
+<div id="mydiv6-3">
+  <div id="mydivheader"><a href="https://www.hankookilbo.com/News/Read/A2020102617370002963" target="_blank">"돈이 무슨 소용있나" 이건희 회장의 마지막 편지?…삼성 "고인이 쓴 글 아냐"
+  </a></div>
+</div>
+
+<div id="mydiv6-4">
+  <div id="mydivheader"><a href="https://www.hankookilbo.com/News/Read/A2020102814080005570" target="_blank">이건희 회장 별세 뉴스에 '삼성생명법'이 왜 나와?
+  </a> </div>
+</div>
+
+<div id="mydiv6-5">
+  <div id="mydivheader"><a href="https://www.hankookilbo.com/News/Read/A2020102109100002739" target="_blank">고 이건희 회장 태어난 대구 호암고택, 공원으로 재탄생한다</a> </div>
+</div>
+
+
+<div id="mydiv6-6">
+  <div id="mydivheader"><a href="https://www.hankookilbo.com/News/Read/A2020102809580001189" target="_blank">故 이건희 회장, 33년 동안 삼성 자산 '790조원' 키웠다</a> </div>
+</div>
+<!-- 
+<div id="mydiv6-7">
+  <div id="mydivheader"><a href="https://www.hankookilbo.com/News/Read/A2020092515220002844" target="_blank">"北, 월북자 화장했다"는 김어준에…조수진 "궤변을 밥 먹듯" 비판</a> </div>
+</div>
+
+<div id="mydiv6-8">
+  <div id="mydivheader"><a href="https://www.hankookilbo.com/News/Read/A2020092414150004823" target="_blank"> "북한, 南공무원 총살 20분 만에 시신 태웠다"</a> </div>
+</div>
+ -->
+<!-- <div id="mydiv6-9">
+  <div id="mydivheader"><a href="https://www.hankookilbo.com/News/Read/A2020083110400001151" target="_blank">최대집 "파시스트 문재인 … 의사들에 이래라저래라 말라"</a></div>
+</div> -->
+
+<!-- ----------------7 서울------------ -->
+
+<div id="mydiv7-1">
+  <div id="mydivheader"><a href="https://www.seoul.co.kr/news/newsView.php?id=20201025500056" target="_blank">마지막길 배웅한 ‘이건희 사람들’..삼성 저격수 박용진 “삼성은 응원”</a></div>
+</div>
+
+<div id="mydiv7-2">
+  <div id="mydivheader"><a href="https://www.seoul.co.kr/news/newsView.php?id=20201025500056" target="_blank">[포토] 고 이건희 회장 가족 ‘한자리에’</a></div>
+</div>
+
+<div id="mydiv7-3">
+<div id="mydivheader"><a href="https://www.seoul.co.kr/news/newsView.php?id=20201026500144" target="_blank">“되찾을 수 없는 건 생명”…이건희 ‘가짜 편지’ 확산</a> </div>
+</div>
+
+
+<div id="mydiv7-4">
+  <div id="mydivheader"><a href="https://www.seoul.co.kr/news/newsView.php?id=20201028500119" target="_blank">이건희 마지막 길 지킨 정의선… 재계 3세 총수 간 ‘뜨거운 우정’</a> </div></div>
+
+<div id="mydiv7-5">
+  <div id="mydivheader"><a href="https://www.seoul.co.kr/news/newsView.php?id=20201027500151" target="_blank"> 이건희가 쏘아올린 상속세 논란...“폐지” vs “부의 세습 완화로 기회 균등”</a></div></div>
+
+ <div id="mydiv7-6">
+  <div id="mydivheader"><a href="https://www.seoul.co.kr/news/newsView.php?id=20201025500038" target="_blank">주호영 “韓 위상 세운 이건희 회장, 후대가 기억할 것”
+</a> </div>
+</div>
+
+ <div id="mydiv7-7">
+  <div id="mydivheader"><a href="https://www.seoul.co.kr/news/newsView.php?id=20201025500073" target="_blank">[이건희 별세] 대호법(大護法) 이건희, 원불교와의 인연
+</a> </div>
+</div>
+
+<!--  <div id="mydiv7-8">
+  <div id="mydivheader"><a href="https://www.seoul.co.kr/news/newsView.php?id=20200828005013" target="_blank">“전문의가 뚝딱 만들어지나” “공공의료기관으로 취약지 해결”
+</a> </div>
+</div>
+ -->
+
+<!-- ----------------8 kbs------------ -->
+
+
+<div id="mydiv8-1">
+  <div id="mydivheader"><a href="http://news.kbs.co.kr/news/view.do?ncd=5033935" target="_blank">이건희 타계 ‘고향 대구 추모 물결’…생가·삼성상회 터 주목
+</a></div>
+</div>
+
+
+
+<div id="mydiv8-2">
+  <div id="mydivheader"><a href="http://news.kbs.co.kr/news/view.do?ncd=5033873" target="_blank">이재용 ‘뉴 삼성’ 본격화?…지배 구조 어떻게 되나?</a> </div>
+</div>
+
+
+
+<div id="mydiv8-3">
+  <div id="mydivheader"><a href="http://news.kbs.co.kr/news/view.do?ncd=5033871" target="_blank">‘포스트 이건희’ 지배 구조는? 주가 동향도 관심</a> </div>
+</div>
+
+<div id="mydiv8-4">
+  <div id="mydivheader"><a href="http://news.kbs.co.kr/news/view.do?ncd=5033840" target="_blank">이건희 삼성 회장 별세…공과와 과제는?</a>
+</div></div>
+
+<div id="mydiv8-5">
+  <div id="mydivheader"><a href="http://news.kbs.co.kr/news/view.do?ncd=5033554" target="_blank">상속세만 10조 원…삼성 지배구조 어떻게?</a> </div> 
+</div>
+
+<!--  <div id="mydiv8-6">
+  <div id="mydivheader"><a href="http://news.kbs.co.kr/news/view.do?ncd=5012410" target="_blank">내일 복귀 예정이던 ‘무궁화 10호’…어떤 일 했나?
+</a> </div>
+</div>
+
+<div id="mydiv8-7">
+  <div id="mydivheader"><a href="http://news.kbs.co.kr/news/view.do?ncd=5012405" target="_blank">실종·북 해역에서 발견·피격까지…시간대별 상황 재구성</a> </div>
+</div>
+
+ <div id="mydiv8-8">
+  <div id="mydivheader"><a href="http://news.kbs.co.kr/news/view.do?ncd=5012404" target="_blank">서해상 실종 공무원 北 총격 사망…軍 “천인공노할 만행”
+</a> </div>
+</div> -->
+
+<!-- ----------------9 mbc------------ -->
+<div id="mydiv9-1">
+  <div id="mydivheader"><a href="https://imnews.imbc.com/replay/2020/nw1200/article/5951348_32496.html" target="_blank">이건희 삼성그룹 회장 별세…향년 78세 
+</a> </div>
+</div>
+
+반도체 신화' 일군 이건희…아들 이재용의 삼성은?c SBS & SBS Digital News Lab all rights reserved.2020. 10. 26.<div id="mydiv9-2">
+  <div id="mydivheader"><a href="https://imnews.imbc.com/replay/2020/nwdesk/article/5951601_32524.html" target="_blank"> 이건희 회장 투병 6년 만에 별세…깊었던 '78년' 발자취
+</a></div>
+</div>
+
+<div id="mydiv9-3">
+  <div id="mydivheader"><a href="https://imnews.imbc.com/replay/2020/nwdesk/article/5951602_32524.html" target="_blank"> 이 시각 빈소' 4일간 가족장…각계 추모 이어져</a></div>
+</div>
+<!-- 
+<div id="mydiv9-4">
+  <div id="mydivheader"><a href="https://imnews.imbc.com/news/2020/world/article/5890709_32640.html" target="_blank">日마이니치 "아베 총리, 암 검사 받았다"</a> </div>
+</div>
+ -->
+<!-- <div id="mydiv9-5">
+  <div id="mydivheader"><a href="https://imnews.imbc.com/replay/2020/nwdesk/article/5889967_32524.html" target="_blank">업무복귀 거부하고 사직서 제출…"법적 대응"</a></div>
+</div> -->
+<!-- 
+
+<div id="mydiv9-6">
+  <div id="mydivheader"><a href="https://imnews.imbc.com/news/2020/econo/article/5858652_32647.html" target="_blank">[알려줘! 경제] 전·월세 무조건 4년 된다? 세입자가 갑?  </a> </div>
+</div>
+
+<div id="mydiv9-7">
+  <div id="mydivheader"><a href="https://imnews.imbc.com/replay/2020/nwtoday/article/5858350_32531.html" target="_blank">"이르면 다음 주 시행"…기존 전·월세도 적용</a></div>
+</div>-->
+
+<!-- ----------------10 sbs------------ -->
+<div id="mydiv10-1">
+  <div id="mydivheader"><a href="https://news.sbs.co.kr/news/endPage.do?news_id=N1006043011" target="_blank">반도체 신화' 일군 이건희…아들 이재용의 삼성은?</a></div>
+</div>
+
+<div id="mydiv10-2">
+  <div id="mydivheader"><a href="https://biz.sbs.co.kr/article/10001000405" target="_blank"> 이재용, ‘뉴 삼성’ 경영권 방어·미래산업 발굴 과제는?</a></div>
+</div>
+
+<div id="mydiv10-3">
+  <div id="mydivheader"><a href="https://news.sbs.co.kr/news/endPage.do?news_id=N1006047150" target="_blank">故 이건희 회장 마지막 출근…임직원 배웅 속 영면</a></div>
+</div>
+
+<div id="mydiv10-4">
+  <div id="mydivheader"><a href="https://news.sbs.co.kr/news/endPage.do?news_id=N1006041786" target="_blank">이건희 별세' IOC 애도 성명…"올림픽 성공에 크게 공헌"</a> </div>
+</div>
+
+
+<div id="mydiv10-5">
+  <div id="mydivheader"><a href="https://news.sbs.co.kr/news/endPage.do?news_id=N1006046291" target="_blank">故 이건희 영결식 엄수…이부진 오열하다 휘청</a> </div>
+</div>
+
+<div id="mydiv10-6">
+  <div id="mydivheader"><a href="https://news.sbs.co.kr/news/endPage.do?news_id=N1006045540"target="_blank">고 이건희 회장, 삼성 자산 790조 원 키웠다…'국내 최대'</a></div>
+</div>
+
+<div id="mydiv10-7">
+  <div id="mydivheader"><a href="https://news.sbs.co.kr/news/endPage.do?news_id=N1006040455"target="_blank">이건희 평전, 외톨이 소년에서 삼성 후계자로</a></div>
+</div>
+
+</div>
+<script>  
+dragElement(document.getElementById("mydiv1-1"));
+dragElement(document.getElementById("mydiv1-2"));
+dragElement(document.getElementById("mydiv1-3"));
+dragElement(document.getElementById("mydiv1-4"));
+dragElement(document.getElementById("mydiv1-5"));
+dragElement(document.getElementById("mydiv1-6"));
+dragElement(document.getElementById("mydiv1-7"));
+dragElement(document.getElementById("mydiv1-8"));
+dragElement(document.getElementById("mydiv1-9"));
+
+dragElement(document.getElementById("mydiv2-1"));
+dragElement(document.getElementById("mydiv2-2"));
+dragElement(document.getElementById("mydiv2-3"));
+dragElement(document.getElementById("mydiv2-4"));
+dragElement(document.getElementById("mydiv2-5"));
+dragElement(document.getElementById("mydiv2-6"));
+dragElement(document.getElementById("mydiv2-7"));
+dragElement(document.getElementById("mydiv2-8"));
+dragElement(document.getElementById("mydiv2-9"));
+dragElement(document.getElementById("mydiv2-10"));
+dragElement(document.getElementById("mydiv2-11"));
+dragElement(document.getElementById("mydiv2-12"));
+dragElement(document.getElementById("mydiv2-13"));
+
+dragElement(document.getElementById("mydiv3-1"));
+dragElement(document.getElementById("mydiv3-2"));
+dragElement(document.getElementById("mydiv3-3"));
+dragElement(document.getElementById("mydiv3-4"));
+dragElement(document.getElementById("mydiv3-5"));
+dragElement(document.getElementById("mydiv3-6"));
+dragElement(document.getElementById("mydiv3-7"));
+dragElement(document.getElementById("mydiv3-8"));
+dragElement(document.getElementById("mydiv3-9"));
+dragElement(document.getElementById("mydiv3-10"));
+
+dragElement(document.getElementById("mydiv4-1"));
+dragElement(document.getElementById("mydiv4-2"));
+dragElement(document.getElementById("mydiv4-3"));
+dragElement(document.getElementById("mydiv4-4"));
+dragElement(document.getElementById("mydiv4-5"));
+dragElement(document.getElementById("mydiv4-6"));
+dragElement(document.getElementById("mydiv4-7"));
+dragElement(document.getElementById("mydiv4-8"));
+dragElement(document.getElementById("mydiv4-9"));
+dragElement(document.getElementById("mydiv4-10"));
+dragElement(document.getElementById("mydiv4-11"));
+
+dragElement(document.getElementById("mydiv5-1"));
+dragElement(document.getElementById("mydiv5-2"));
+dragElement(document.getElementById("mydiv5-3"));
+dragElement(document.getElementById("mydiv5-4"));
+dragElement(document.getElementById("mydiv5-5"));
+dragElement(document.getElementById("mydiv5-6"));
+dragElement(document.getElementById("mydiv5-7"));
+dragElement(document.getElementById("mydiv5-8"));
+dragElement(document.getElementById("mydiv5-9"));
+dragElement(document.getElementById("mydiv5-10"));
+dragElement(document.getElementById("mydiv5-11"));
+dragElement(document.getElementById("mydiv5-12"));
+
+dragElement(document.getElementById("mydiv6-1"));
+dragElement(document.getElementById("mydiv6-2"));
+dragElement(document.getElementById("mydiv6-3"));
+dragElement(document.getElementById("mydiv6-4"));
+dragElement(document.getElementById("mydiv6-5"));
+dragElement(document.getElementById("mydiv6-6"));
+dragElement(document.getElementById("mydiv6-7"));
+
+dragElement(document.getElementById("mydiv7-1"));
+dragElement(document.getElementById("mydiv7-2"));
+dragElement(document.getElementById("mydiv7-3"));
+dragElement(document.getElementById("mydiv7-4"));
+dragElement(document.getElementById("mydiv7-5"));
+dragElement(document.getElementById("mydiv7-6"));
+dragElement(document.getElementById("mydiv7-7"));
+dragElement(document.getElementById("mydiv7-8"));
+dragElement(document.getElementById("mydiv7-9"));
+dragElement(document.getElementById("mydiv7-10"));
+
+dragElement(document.getElementById("mydiv8-1"));
+dragElement(document.getElementById("mydiv8-2"));
+dragElement(document.getElementById("mydiv8-3"));
+dragElement(document.getElementById("mydiv8-4"));
+dragElement(document.getElementById("mydiv8-5"));
+dragElement(document.getElementById("mydiv8-6"));
+dragElement(document.getElementById("mydiv8-7"));
+
+dragElement(document.getElementById("mydiv9-1"));
+dragElement(document.getElementById("mydiv9-2"));
+dragElement(document.getElementById("mydiv9-3"));
+dragElement(document.getElementById("mydiv9-4"));
+dragElement(document.getElementById("mydiv9-5"));
+
+dragElement(document.getElementById("mydiv10-1"));
+dragElement(document.getElementById("mydiv10-2"));
+dragElement(document.getElementById("mydiv10-3"));
+dragElement(document.getElementById("mydiv10-4"));
+
+
+function dragElement(elmnt) {
+  var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+  if (document.getElementById(elmnt.id + "header")) {
+    document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
+  } else {
+    elmnt.onmousedown = dragMouseDown;
+  }
+
+  function dragMouseDown(e) {
+    e = e || window.event;
+    e.preventDefault();
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    document.onmouseup = closeDragElement;
+    document.onmousemove = elementDrag;
+  }
+
+  function elementDrag(e) {
+    e = e || window.event;
+    e.preventDefault();
+    pos1 = pos3 - e.clientX;
+    pos2 = pos4 - e.clientY;
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+    elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+  }
+
+  function closeDragElement() {
+    document.onmouseup = null;
+    document.onmousemove = null;
+  }
+}
+</script>
+
+</body>
+</html>
